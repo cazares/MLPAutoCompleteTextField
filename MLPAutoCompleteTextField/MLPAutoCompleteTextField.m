@@ -67,6 +67,7 @@ static NSString *kDefaultAutoCompleteCellIdentifier = @"_DefaultAutoCompleteCell
 @property (assign) CGColorRef originalShadowColor;
 @property (assign) CGSize originalShadowOffset;
 @property (assign) CGFloat originalShadowOpacity;
+@property (nonatomic) CGRect rectForBounds;
 @end
 
 
@@ -110,8 +111,18 @@ static NSString *kDefaultAutoCompleteCellIdentifier = @"_DefaultAutoCompleteCell
     [self setAutoCompleteTableView:newTableView];
     
     [self styleAutoCompleteTableForBorderStyle:self.borderStyle];
+    self.rectForBounds = CGRectMake(0, 0, 10, 0);
 }
 
+- (CGRect)textRectForBounds:(CGRect)bounds {
+    [super textRectForBounds:bounds];
+    return CGRectInset(bounds, self.rectForBounds.size.width, self.rectForBounds.size.height);
+}
+
+- (CGRect)editingRectForBounds:(CGRect)bounds {
+    [super editingRectForBounds:bounds];
+    return CGRectInset(bounds, self.rectForBounds.size.width, self.rectForBounds.size.height);
+}
 
 #pragma mark - Notifications and KVO
 
