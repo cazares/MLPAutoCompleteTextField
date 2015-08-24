@@ -41,6 +41,4 @@ This method will be called asynchronously, so an immediate return is not necessa
 - (NSArray *)autoCompleteTextField:(MLPAutoCompleteTextField *)textField
       possibleCompletionsForString:(NSString *)string;
 
-
-
 @end

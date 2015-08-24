@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		64AAFDD619361B30004EB079 /* DEMODataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AAFDD519361B30004EB079 /* DEMODataSource.m */; };
+		73FEB6E31B8BAAC200F0B539 /* MLPCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FEB6E21B8BAAC200F0B539 /* MLPCustomer.m */; };
 		8559115416C19381007F88DE /* Nepal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8559105A16C19380007F88DE /* Nepal@2x.png */; };
 		8559115516C19381007F88DE /* Switzerland@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8559105B16C19380007F88DE /* Switzerland@2x.png */; };
 		8559115616C19381007F88DE /* Vanuatu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8559105C16C19380007F88DE /* Vanuatu@2x.png */; };
@@ -547,6 +548,8 @@
 /* Begin PBXFileReference section */
 		64AAFDD419361B30004EB079 /* DEMODataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMODataSource.h; sourceTree = "<group>"; };
 		64AAFDD519361B30004EB079 /* DEMODataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMODataSource.m; sourceTree = "<group>"; };
+		73FEB6E11B8BAAC200F0B539 /* MLPCustomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPCustomer.h; sourceTree = "<group>"; };
+		73FEB6E21B8BAAC200F0B539 /* MLPCustomer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPCustomer.m; sourceTree = "<group>"; };
 		8559105A16C19380007F88DE /* Nepal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Nepal@2x.png"; path = "Flags @2x/Nepal@2x.png"; sourceTree = "<group>"; };
 		8559105B16C19380007F88DE /* Switzerland@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Switzerland@2x.png"; path = "Flags @2x/Switzerland@2x.png"; sourceTree = "<group>"; };
 		8559105C16C19380007F88DE /* Vanuatu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Vanuatu@2x.png"; path = "Flags @2x/Vanuatu@2x.png"; sourceTree = "<group>"; };
@@ -1751,6 +1754,8 @@
 		85FF05A116B0887F009A94EE /* MLPAutoCompleteTextField */ = {
 			isa = PBXGroup;
 			children = (
+				73FEB6E11B8BAAC200F0B539 /* MLPCustomer.h */,
+				73FEB6E21B8BAAC200F0B539 /* MLPCustomer.m */,
 				85EB411016C3488D000C193E /* MLPAutoCompleteTextField.h */,
 				85EB411116C3488D000C193E /* MLPAutoCompleteTextField.m */,
 				85EB411216C3488D000C193E /* MLPAutoCompleteTextFieldDataSource.h */,
@@ -2377,6 +2382,7 @@
 				85FF057716B0874D009A94EE /* DEMOAppDelegate.m in Sources */,
 				85FF058016B0874D009A94EE /* DEMOViewController.m in Sources */,
 				64AAFDD619361B30004EB079 /* DEMODataSource.m in Sources */,
+				73FEB6E31B8BAAC200F0B539 /* MLPCustomer.m in Sources */,
 				8559144A16C1C2B8007F88DE /* DEMOCustomAutoCompleteCell.m in Sources */,
 				85EB411616C3488D000C193E /* MLPAutoCompleteTextField.m in Sources */,
 				85EB411716C3488D000C193E /* NSString+Levenshtein.m in Sources */,
