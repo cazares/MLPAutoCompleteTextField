@@ -42,11 +42,11 @@
     //[self.autocompleteDataSource setSimulateLatency:YES];
     //[self.autocompleteDataSource setTestWithAutoCompleteObjectsInsteadOfStrings:YES];
     
-    
+    /*
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShowWithNotification:) name:UIKeyboardDidShowNotification object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHideWithNotification:) name:UIKeyboardDidHideNotification object:nil];
-    
+    */
     [self.typeSwitch addTarget:self
                         action:@selector(typeDidChange:)
               forControlEvents:UIControlEventValueChanged];
@@ -86,7 +86,7 @@
 }
 
 
-
+/*
 - (void)keyboardDidShowWithNotification:(NSNotification *)aNotification
 {
     [UIView animateWithDuration:0.3
@@ -145,7 +145,7 @@
     
     [self.autocompleteTextField setAutoCompleteTableViewHidden:NO];
 }
-
+*/
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
@@ -192,5 +192,20 @@
     }
 }
 
+- (void)autoCompleteTextField:(MLPAutoCompleteTextField *)textField willHideAutoCompleteTableView:(UITableView *)autoCompleteTableView {
+    NSLog(@"Autocomplete table view will be removed from the view hierarchy");
+}
+
+- (void)autoCompleteTextField:(MLPAutoCompleteTextField *)textField willShowAutoCompleteTableView:(UITableView *)autoCompleteTableView {
+    NSLog(@"Autocomplete table view will be added to the view hierarchy");
+}
+
+- (void)autoCompleteTextField:(MLPAutoCompleteTextField *)textField didHideAutoCompleteTableView:(UITableView *)autoCompleteTableView {
+    NSLog(@"Autocomplete table view ws removed from the view hierarchy");
+}
+
+- (void)autoCompleteTextField:(MLPAutoCompleteTextField *)textField didShowAutoCompleteTableView:(UITableView *)autoCompleteTableView {
+    NSLog(@"Autocomplete table view was added to the view hierarchy");
+}
 
 @end
