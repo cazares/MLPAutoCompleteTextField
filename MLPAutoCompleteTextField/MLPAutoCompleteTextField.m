@@ -389,7 +389,9 @@ withAutoCompleteString:(NSString *)string
        self.autoCompleteTableAppearsAsKeyboardAccessory){
         [self fetchAutoCompleteSuggestions];
     }
-    
+ 
+    self.autoCompleteTableView.layer.position = CGPointZero;
+ 
     return [super becomeFirstResponder];
 }
 
